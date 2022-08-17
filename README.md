@@ -31,6 +31,8 @@
 
     - Test Suite Configured
 
+    - Test Flags/tags for filtering - https://github.com/cypress-io/cypress-grep
+
 ## Project structure
 
     .
@@ -47,6 +49,9 @@
     │   │   ├── HomePage.js
     │   │   ├── LoginPage.js
     │   │   └── ...
+    |   ├── locators
+    |   |   ├── BasePage.locator.js
+    |   |   ├── LoginPage.locator.js
     │   ├── plugins
     │   │   ├── index.js
     │   │   └── ...
@@ -71,3 +76,15 @@
     - https://github.com/cypress-io/testing-workshop-cypress
 
     - https://github.com/ganeshsirsi/CypressTypeScript
+
+    - https://github.com/cypress-io/cypress-grep
+
+    - https://glebbahmutov.com/blog/cypress-grep-filters/
+
+    - https://www.cypress.io/blog/2018/02/05/when-can-the-test-start/
+    
+    - https://glebbahmutov.com/blog/cypress-should-callback/  - Should gives promise
+
+    - https://www.lambdatest.com/blog/fill-and-submit-forms-in-cypress/
+
+    

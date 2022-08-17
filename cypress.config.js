@@ -56,10 +56,13 @@ module.exports = defineConfig({
         await beforeRunHook(details);
         //If you are using other than Windows remove below two lines
         //Code to remove screenshot and reports directory for Windows
-        if (Cypress.platform in ["win32","win64"]) {
-          await exec("IF EXIST cypress\\screenshots rmdir /Q /S cypress\\screenshots")
-          await exec("IF EXIST cypress\\reports rmdir /Q /S cypress\\reports")
-        }
+        await exec("IF EXIST cypress\\screenshots rmdir /Q /S cypress\\screenshots")
+        await exec("IF EXIST cypress\\reports rmdir /Q /S cypress\\reports")
+
+        // if (Cypress.platform in ["win32","win64"]) {
+        //   await exec("IF EXIST cypress\\screenshots rmdir /Q /S cypress\\screenshots")
+        //   await exec("IF EXIST cypress\\reports rmdir /Q /S cypress\\reports")
+        // }
 
       });
 
@@ -67,9 +70,12 @@ module.exports = defineConfig({
         console.log('override after:run');
         //if you are using other than Windows remove below line starts having await exec
         //Code to created Merged JUnit XML file
-        if (Cypress.platform in ["win32","win64"]) {
-          await exec("npx jrm ./cypress/reports/junitreport.xml ./cypress/reports/junit/*.xml");
-        }
+        
+        await exec("npx jrm ./cypress/reports/junitreport.xml ./cypress/reports/junit/*.xml");
+
+        // if (Cypress.platform in ["win32","win64"]) {
+        //   await exec("npx jrm ./cypress/reports/junitreport.xml ./cypress/reports/junit/*.xml");
+        // }
         await afterRunHook();
       });
 

@@ -18,6 +18,14 @@ import './commands'
 import 'cypress-mochawesome-reporter/register'
 
 
+// cypress/support/index.js
+// load and register the grep feature using "require" function
+// https://github.com/cypress-io/cypress-grep
+
+import registerCypressGrep from 'cypress-grep'
+registerCypressGrep()
+
+
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="6.5330" tests="2" failures="-1" skipped="1">
+  <testsuite name="Root Suite" timestamp="2022-08-09T12:50:34" tests="0" file="cypress\e2e\1-landing-page.spec.cy.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Verify Environment Config" timestamp="2022-08-09T12:50:34" tests="2" time="6.5030" failures="0">
+    <testcase name="Verify Environment Config Verify Environment" time="4.4770" classname="Verify Environment">
+    </testcase>
+  </testsuite>
+</testsuites>
