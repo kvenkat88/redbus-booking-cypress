@@ -23,7 +23,7 @@ Get the element text available on the element using invoke() method.
 Invoke method would use the jquery text method and return the promise and element text would be fetched for evaluation
 Example element - <a href="javascript:void(0)" class="home-redirect redbus-logo" xpath="1">redbus</a>
 */
-cy.get('.home-redirect.redbus-logo').invoke('text').then((test)=>{
+cy.get('.home-redirect.redbus-logo').invoke('text').then((text)=>{
     cy.log(text)
     //perform text validation here
 })

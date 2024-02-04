@@ -109,3 +109,17 @@
     XPATH: //input[@id='username']/following-sibling:input[1]
     CSS: #username + input
 */
+
+
+// conatins a text
+
+// https://saucelabs.com/resources/articles/selenium-tips-css-selectors
+// https://css-tricks.com/the-difference-between-nth-child-and-nth-of-type/
+// https://www.swtestacademy.com/css-selenium/
+
+// https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048
+
+// Next Sibling -> #username + input
+
+// :not(.class-name) 
+
